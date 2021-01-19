@@ -28,7 +28,7 @@
         "dateIssued": {
           "type": "string",
           "format": "date-time"
-        },
+        }
       },
       "required": [
         "processcell",
