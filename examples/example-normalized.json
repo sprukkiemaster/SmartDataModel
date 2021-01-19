@@ -1,0 +1,43 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "id": "Object path in the machine",
+  "title": "SMB / FIWARE - ModuleStatus",
+  "description": "Represent a status for a physical SMB module.",
+  "type": "Sensor",
+  "Sensor": {
+	"value": {
+	  "name": "10DI12",
+	  "type": "TRUE/FALSE",
+	  "value": "TRUE"
+	}
+  },
+	  "location": {
+		"value": {
+		  "enterprise": {
+			"value": "Dopple"
+		},
+		"site": {
+			"value": "Emmen"
+		},
+		"area": {
+			"value": "Mainfloor"
+		},
+		"processcell": {
+			"value": "Earbud Assembly Cell"
+		},
+		"unit": {
+			"value": "Supply Unit"
+		},
+		"equipmentmodule": {
+			"value": "product infeed"
+		},
+		"controlmodule": {
+			"value": "product detector"
+		},
+		"dateIssued": {
+		  "type": "DateTime",
+		  "value": "2020-11-25T13:13:55.00Z"
+		}	
+	}
+  }
+}

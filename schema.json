@@ -1,0 +1,72 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "metaData": {
+      "type": "object",
+      "properties": {
+        "enterprise": {
+          "type": "string"
+        },
+        "site": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string"
+        },
+        "processcell": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "equipmentmodule": {
+          "type": "string"
+        },
+        "controllmodule": {
+          "type": "string"
+        },
+        "dateIssued": {
+          "type": "string",
+          "format": "date-time"
+        },
+      },
+      "required": [
+        "processcell",
+        "unit",
+        "controllmodule",
+        "dateIssued"
+      ]
+    },
+    "attribute": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "metaData": {
+          "$ref": "#/definitions/metaData"
+        },
+      "required": [
+        "name",
+        "type",
+        "value"
+			]
+			}
+    }
+  },
+ "id": "Object path in the machine",
+  "title": "SMB / FIWARE - ModuleStatus",
+  "description": "Represent a status for a physical SMB module.",
+  "Sensor": {
+      "$ref": "#/definitions/attribute"
+      },
+  	"required": [
+    	"Sensor"
+  		]
+}

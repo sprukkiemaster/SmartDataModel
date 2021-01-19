@@ -1,0 +1,22 @@
+{
+  "id": "Object path in the machine",
+  "type": "Sensor",
+  "Sensor": {
+    "name": "10DI12",
+    "type": "TRUE/FALSE",
+    "value": "TRUE"
+  },
+  "location": {
+    "enterprise": "Demcon",
+    "site": "Enschede",
+    "area": "Mainfloor",
+    "processcell": "Earbud",
+    "unit": "Supply",
+    "equipmentmodule": "product infeed",
+    "controllmodule": "product present",
+    "dateIssued": "2020-11-25T13:13:55.00Z"
+  }
+}
+
+
+
