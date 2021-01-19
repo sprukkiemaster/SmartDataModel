@@ -1,5 +1,5 @@
 ﻿{
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/schema#",
   "definitions": {
     "metaData": {
       "type": "object",
@@ -60,7 +60,7 @@
 			}
     }
   },
- "id": "Object path in the machine",
+ "$id": "https://github.com/sprukkiemaster/SmartDataModel/blob/main/SMB/schema.json",
   "title": "SMB / FIWARE - ModuleStatus",
   "description": "Represent a status for a physical SMB module.",
   "Sensor": {
