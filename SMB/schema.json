@@ -1,64 +1,33 @@
 ﻿{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "definitions": {
-    "metaData": {
-      "id" : "#metaData",
-      "type": "object",
-      "properties": {
-        "enterprise": {
-          "type": "string"
-        },
-        "site": {
-          "type": "string"
-        },
-        "area": {
-          "type": "string"
-        },
-        "processcell": {
-          "type": "string"
-        },
-        "unit": {
-          "type": "string"
-        },
-        "equipmentmodule": {
-          "type": "string"
-        },
-        "controllmodule": {
-          "type": "string"
-        },
-        "dateIssued": {
-          "type": "string",
-          "format": "date-time"
-        }
-      },
-      "required": [
-        "processcell",
-        "unit",
-        "controllmodule",
-        "dateIssued"
-      ]
-    },
-    "attribute": {
-      "id" : "#attribute",
-      "type": "object",
-      "properties": {
-        "name": { "type": "string" },
-        "type":   { "type": "string" },
-        "value": { "type": "string" },
-        "metaData": { "$ref": "#metaData" }
-         },
-      "required": [ "name", "type", "value"]
+	"$schema": "http://json-schema.org/schema#",
+	"id": "https://github.com/sprukkiemaster/SmartDataModel/blob/main/SMB/schema.json",
+	"title": "SMB / FIWARE - ModuleStatus",
+	"description": "Represent a status for a physical SMB module.",
+	"type": "object",
+	"properties": {
+		"Sensor": {
+			"type": "object",
+			"properties": {
+			"name": {"type": "string","description": "Sensor name"},
+			"type": {"type": "string","description": "Sensor detection type"},
+			"value": {"type": "string","description": "Sensor value"}
+				},
+				"required": ["name","type","value"]
+			},
+
+		"Location": {
+			"type": "object",
+			"properties": {
+				"enterprise": {"type": "string"},
+				"site": {"type": "string"},
+				"area": {"type": "string"},
+				"processcell": {"type": "string"},
+				"unit": {"type": "string"},
+				"equipmentmodule": {"type": "string"},
+				"controllmodule": {"type": "string"},
+				"dateIssued": {"type": "string","format": "date-time"}
+				},
+				"required": ["processcell","unit","controllmodule","dateIssued"]
+		}
 	}
-  
-  },
- "id": "schema",
-  "title": "SMB / FIWARE - ModuleStatus",
-  "description": "Represent a status for a physical SMB module.",
-     "type": "object",
-      "properties": {
-              "Sensor": { "$ref":  "#attribute" }
-      },
-  	"required": [
-    	"Sensor"
-  		]
 }
