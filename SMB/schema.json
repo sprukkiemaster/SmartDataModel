@@ -38,8 +38,7 @@
 				"equipmentModule": {"type": "string","description": "Name of the equipmentmodule in the unit"},
 				"controllModule": {"type": "string","description": "Name of the controllmodule in the equipmentmodule"},
 				"dateIssued": {"type": "string","format": "date-time","description": "Sensor name"}
-				},
-			"required": ["controllmodule","dateIssued"]
+				}
 		}
 	}
 }
