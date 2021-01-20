@@ -17,11 +17,14 @@
 					"type": "string",
 					"description": "NGSI Entity type"
 					},
-			"name": {"type": "string","description": "Sensor name"},
-			"type": {"type": "string","description": "Sensor detection type"},
-			"value": {"type": "string","description": "Sensor value"}
-				}
-			},
+				"name": {"type": "string","description": "Sensor name"},
+				"type": {"type": "string","description": "Sensor detection type"},
+				"value": {"type": "string","description": "Sensor value"}
+				},
+			"required": ["name","type","value"]
+		},
+			
+
 		"Location": {
 			"properties": {
 				"type": {
@@ -36,8 +39,8 @@
 				"equipmentModule": {"type": "string","description": "Name of the equipmentmodule in the unit"},
 				"controllModule": {"type": "string","description": "Name of the controllmodule in the equipmentmodule"},
 				"dateIssued": {"type": "string","format": "date-time","description": "Sensor name"}
-				}
-			}
-		},
-	"required": ["controllmodule","dateIssued","name","type","value"]
+				},
+			"required": ["controllmodule","dateIssued"]
+		}
+	}
 }
