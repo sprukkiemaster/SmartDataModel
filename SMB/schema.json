@@ -1,6 +1,6 @@
 ﻿{
 	"$schema": "http://json-schema.org/schema#",
-	"id": "https://github.com/sprukkiemaster/SmartDataModel/blob/main/SMB/schema.json",
+	"id": "https://github.com/sprukkiemaster/SmartDataModel/main/SMB/schema.json",
 	"title": "SMB / FIWARE - ModuleStatus",
 	"description": "Represent a status for a physical SMB module.",
 	"type": "object",
