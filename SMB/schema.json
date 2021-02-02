@@ -12,7 +12,7 @@
     "Sensor": {
       "type": "object",
       "properties": {
-        "stype": {
+        "type": {
           "type": "string",
           "description": "NGSI Entity type"
         },
