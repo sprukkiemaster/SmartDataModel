@@ -7,7 +7,7 @@
    "allOf": [
    {
 	  "properties": {
-		"type": {
+		"Sensor": {
 		  "type": "string",
 		  "enum": ["Sensor"],
 		  "description": "Property. NGSI Entity type. It has to be Sensor"
