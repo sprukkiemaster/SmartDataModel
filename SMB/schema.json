@@ -17,7 +17,7 @@
           "type": "string",
 		  "description": "Property. Model:'https://schema.org/Text' NGSI Name of the object"
 			},
-        "type": {
+        "sType": {
           "type": "string",
 		  "description": "Property. Model:'https://schema.org/Text' type description of the object"
 			},
