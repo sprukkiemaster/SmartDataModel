@@ -5,69 +5,71 @@
   "description": "Represent a status for a physical SMB module.",
   "type": "object",
    "allOf": [
-  "properties": {
-    "type": {
-      "type": "string",
-	  "enum": ["Sensor"],
-      "description": "Property. NGSI Entity type. It has to be Sensor"
-		},
-        "type": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'NGSI Entity type"
-        },
-        "name": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'Sensor name"
-        },
-        "value": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'Sensor value"
-        }
-      },
+   {
+	  "properties": {
+		"type": {
+		  "type": "string",
+		  "enum": ["Sensor"],
+		  "description": "Property. NGSI Entity type. It has to be Sensor"
+			},
+			"type": {
+			  "type": "string",
+			  "description": "Property. Model:'https://schema.org/Text'NGSI Entity type"
+			},
+			"name": {
+			  "type": "string",
+			  "description": "Property. Model:'https://schema.org/Text'Sensor name"
+			},
+			"value": {
+			  "type": "string",
+			  "description": "Property. Model:'https://schema.org/Text'Sensor value"
+			}
+		  },
 
-    "properties": {
-      "type": {
-		"type": "string",
-		"enum": ["Location"],
-		"description": "Property. NGSI Entity type. It has to be Location"
-		},
-        "type": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. NGSI Entity type"
-        },
-        "enterprise": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Name of the enterprise"
-        },
-        "site": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Name of the production site"
-        },
-        "area": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Name of the area location on the site"
-        },
-        "processCell": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Name of the processcell"
-        },
-        "unit": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Name of the unit the in the processcell"
-        },
-        "equipmentModule": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Name of the equipmentmodule in the unit"
-        },
-        "controllModule": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Name of the controllmodule in the equipmentmodule"
-        },
-        "dateIssued": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/Text'. Time stamp of event"
-        }
-    }
+		"properties": {
+		  "type": {
+			"type": "string",
+			"enum": ["Location"],
+			"description": "Property. NGSI Entity type. It has to be Location"
+				},
+			"type": {
+			  "type": "string",
+			  "description": "Property. Model:'https://schema.org/Text'. NGSI Entity type"
+				},
+			"enterprise": {
+			  "type": "string",
+			  "description": "Property. Model:'https://schema.org/Text'. Name of the enterprise"
+				},
+			"site": {
+			  "type": "string",
+			  "description": "Property. Model:'https://schema.org/Text'. Name of the production site"
+				},
+			"area": {
+			  "type": "string",
+			  "description": "Property. Model:'https://schema.org/Text'. Name of the area location on the site"
+				},
+			"processCell": {
+			  "type": "string",
+			  "description": "Property. Model:'https://schema.org/Text'. Name of the processcell"
+				},
+			"unit": {
+			  "type": "string",
+			  "description": "Property. Model:'https://schema.org/Text'. Name of the unit the in the processcell"
+				},
+			"equipmentModule": {
+			  "type": "string",
+			  "description": "Property. Model:'https://schema.org/Text'. Name of the equipmentmodule in the unit"
+				},
+			"controllModule": {
+			  "type": "string",
+			  "description": "Property. Model:'https://schema.org/Text'. Name of the controllmodule in the equipmentmodule"
+				},
+			"dateIssued": {
+			  "type": "string",
+			  "format": "date-time",
+			  "description": "Property. Model:'https://schema.org/Text'. Time stamp of event"
+				}
+			}
+		}
 	]
 }
