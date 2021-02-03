@@ -3,8 +3,7 @@
   "id": "https://github.com/sprukkiemaster/SmartDataModel/main/SMB/schema.json",
   "title": "SMB / FIWARE - ModuleStatus",
   "type": "object",
-	"allOf": [
-	{
+
       "sensor": {
         "type": {
           "type": "string",
@@ -26,7 +25,6 @@
 		  "description": "Property. Model:'https://schema.org/Text' Sensor output value"
 			}
 		},
-
 	"location": {
         "type": {
           "type": "string",
@@ -68,7 +66,4 @@
 		  "description": "Property. Model:'https://schema.org/Text'. Time stamp of event"
 			}
 		}
-	}
-	]
 }
-
