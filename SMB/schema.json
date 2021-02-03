@@ -4,6 +4,7 @@
   "title": "SMB / FIWARE - ModuleStatus",
   "description": "Represent a status for a physical SMB module.",
   "type": "object",
+   "allOf": [
   "properties": {
     "type": {
       "type": "string",
@@ -68,4 +69,5 @@
           "description": "Property. Model:'https://schema.org/Text'. Time stamp of event"
         }
     }
+	]
 }
