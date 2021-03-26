@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "https://github.com/sprukkiemaster/SmartDataModel/main/SMB/schema.json",
-  "title": "SMB / FIWARE - ModuleStatus",
+  "title": "SMB / FIWARE - module information",
   "type": "object",
   "allOf": [
     {
