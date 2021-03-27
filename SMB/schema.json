@@ -1,6 +1,6 @@
 ﻿{
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "$id": "https://github.com/sprukkiemaster/SmartDataModel/main/SMB/schema.json",
+  "$id": "machine",
   "title": "SMB / FIWARE - module information",
   "description": "Represent a physical sensor with its current status",
   "type": "object",
