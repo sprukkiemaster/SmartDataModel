@@ -2,7 +2,6 @@
   "id": "Machine",
   "type": "Sensor",
   "dataProvider": "Demcon",
-  "refDevice": "Device:d95372df39",
     "Sensor": {
     "name": "10DI12",
     "type": "TRUE/FALSE",
@@ -16,7 +15,6 @@
     "equipmentmodule": "product infeed",
     "controllmodule": "product present",
     "dateIssued": "2020-11-25T13:13:55.00Z"
-
 }
 
 
