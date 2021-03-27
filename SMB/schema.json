@@ -1,66 +1,75 @@
 ﻿{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "$id": "machine",
-  "title": "SMB / FIWARE - module information",
-  "description": "Represent a physical sensor with its current status",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "Sensor"
-          ],
-          "description": "Property. NGSI Entity type. It has to be Sensor"
-        },
-        "sType": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. type description of the object"
-        },
-        "value": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Sensor output value"
-        }
-      },
-      "enterprise": {
-        "type": "string",
-        "description": "Property. Model:'https://schema.org/Text'. Name of the enterprise"
-      },
-      "site": {
-        "type": "string",
-        "description": "Property. Model:'https://schema.org/Text'. Name of the production site"
-      },
-      "area": {
-        "type": "string",
-        "description": "Property. Model:'https://schema.org/Text'. Name of the area location on the site"
-      },
-      "processCell": {
-        "type": "string",
-        "description": "Property. Model:'https://schema.org/Text'. Name of the processcell"
-      },
-      "unit": {
-        "type": "string",
-        "description": "Property. Model:'https://schema.org/Text'. Name of the unit the in the processcell"
-      },
-      "equipmentModule": {
-        "type": "string",
-        "description": "Property. Model:'https://schema.org/Text'. Name of the equipmentmodule in the unit"
-      },
-      "controlModule": {
-        "type": "string",
-        "description": "Property. Model:'https://schema.org/Text'. Name of the controllmodule in the equipmentmodule"
-      },
-      "dateIssued": {
-        "type": "string",
-        "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denotes the last time when a flow successfully reported data. The date and time of this Repository in ISO8601 UTCformat"
-      }
-    }
-  ]
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"$id": "https://github.com/sprukkiemaster/SmartDataModel/main/SMB/schema.json",
+	"title": "SMB / FIWARE - module information",
+	"description": "Represent a physical sensor with its current status",
+	"type": "object",
+	"allOf": [{
+			"$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+		},
+		{
+			"$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+		},
+		{
+			"properties": {
+				"type": {
+					"type": "string",
+					"enum": [
+						"Sensor"
+					],
+					"description": "Property. NGSI Entity type. It has to be Sensor"
+				},
+				"sType": {
+					"type": "string",
+					"format": "uri",
+					"description": "Property. Model:'https://schema.org/Text'. type description of the object"
+				},
+				"value": {
+					"type": "string",
+					"format": "uri",
+					"description": "Property. Model:'https://schema.org/Text'. Sensor output value"
+				}
+			},
+			"enterprise": {
+				"type": "string",
+				"format": "uri",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the enterprise"
+			},
+			"site": {
+				"type": "string",
+				"format": "uri",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the production site"
+			},
+			"area": {
+				"type": "string",
+				"format": "uri",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the area location on the site"
+			},
+			"processCell": {
+				"type": "string",
+				"format": "uri",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the processcell"
+			},
+			"unit": {
+				"type": "string",
+				"format": "uri",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the unit the in the processcell"
+			},
+			"equipmentModule": {
+				"type": "string",
+				"format": "uri",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the equipmentmodule in the unit"
+			},
+			"controlModule": {
+				"type": "string",
+				"format": "uri",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the controllmodule in the equipmentmodule"
+			},
+			"dateIssued": {
+				"type": "string",
+				"format": "uri",
+				"description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denotes the last time when a flow successfully reported data. The date and time of this Repository in ISO8601 UTCformat"
+			}
+		}
+	]
 }
