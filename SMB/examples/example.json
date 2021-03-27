@@ -1,12 +1,13 @@
 {
-  "id": "Object path in the machine",
+  "id": "Machine",
   "type": "Sensor",
-  "Sensor": {
+  "dataProvider": "Demcon",
+  "refDevice": "Device:d95372df39",
+    "Sensor": {
     "name": "10DI12",
     "type": "TRUE/FALSE",
     "value": "TRUE"
   },
-  "location": {
     "enterprise": "Demcon",
     "site": "Enschede",
     "area": "Mainfloor",
@@ -15,8 +16,7 @@
     "equipmentmodule": "product infeed",
     "controllmodule": "product present",
     "dateIssued": "2020-11-25T13:13:55.00Z"
-  }
-}
 
+}
 
 

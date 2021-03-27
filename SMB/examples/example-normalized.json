@@ -1,6 +1,6 @@
 {
   "schema": "http://json-schema.org/draft-07/schema#",
-  "id": "Object path in the machine",
+  "id": "Machine",
   "title": "SMB / FIWARE - ModuleStatus",
   "description": "Represent a status for a physical SMB module.",
   "type": "Sensor",
@@ -11,7 +11,6 @@
 	  "value": "TRUE"
 	}
   },
-	  "location": {
 		"value": {
 		  "enterprise": {
 			"value": "Dopple"
@@ -39,5 +38,4 @@
 		  "value": "2020-11-25T13:13:55.00Z"
 		}	
 	}
-  }
 }

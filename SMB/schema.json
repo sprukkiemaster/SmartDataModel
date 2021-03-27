@@ -58,7 +58,7 @@
       },
       "dateIssued": {
         "type": "string",
-        "description": "Property. Model:'https://schema.org/DateTime'. Time stamp of event"
+        "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denotes the last time when a flow successfully reported data. The date and time of this Repository in ISO8601 UTCformat"
       }
     }
   ]
