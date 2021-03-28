@@ -1,87 +1,61 @@
-﻿
-Skip to content
-Pull requests
-Issues
-Marketplace
-Explore
-@sprukkie
-smart-data-models /
-dataModel.Battery
-
-3
-0
-
-    2
-
-Code
-Issues
-Pull requests
-Actions
-{
-  "$schema": "http://json-schema.org/schema#",
-  "$id": "https://smart-data-models.github.io/dataModel.Battery/BatteryStatus/schema.json",
-  "title": "GSMA / FIWARE - BatteryStatus",
-  "description": "Represent a status for a physical battery.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "BatteryStatus"
-          ],
-          "description": "Property. NGSI Entity type. It has to be BatteryStatus"
-        }
-      },
-      "refBattery": {
-        "oneOf": [
-          {
-            "type": "string",
-            "format": "uri"
-          },
-          {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
-          }
-        ],
-        "description": "Relationship. Model:'http://schema.org/URL'. Reference to the battery entity"
-      },
-      "statusPercent": {
-        "type": "integer",
-        "minimum": 0,
-        "maximum": 1,
-        "description": "Property. Model:'http://schema.org/Number'. Percentage of charge available for the battery"
-      },
-      "acPowerInput": {
-        "type": "number",
-        "description": "Property. Model:'http://schema.org/Number'. Numeric value in volts for the alternate current charge. Units:'volts'"
-      },
-      "acPowerOutput": {
-        "type": "number",
-        "description": "Property. Model:'http://schema.org/Number'. Numeric value in volts for the alternate output. Units:'volts'"
-      },
-      "dcPowerInput": {
-        "type": "number",
-        "description": "Property. Model:'http://schema.org/Number'. Numeric value in volts for the continuous current charge. Units:'volts'"
-      },
-      "dcPowerOutput": {
-        "type": "number",
-        "description": "Property. Model:'http://schema.org/Number'. Numeric value in volts for the continuous current charge. Units:'volts'"
-      }
-    }
-  ],
-  "required": [
-    "id",
-    "type",
-    "refBattery",
-    "status",
-    "statusPercent"
-  ]
+﻿{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"$id": "https://github.com/sprukkiemaster/SmartDataModel/main/SMB/schema.json",
+	"title": "SMB / FIWARE - sensor information",
+	"description": "Represent a physical sensor with its current status",
+	"type": "object",
+	"allOf": [{
+			"$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+		},
+		{
+			"$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+		},
+		{
+			"properties": {
+				"type": {
+					"type": "string",
+					"enum": [
+						"Sensor"
+					],
+					"description": "Property. NGSI Entity type. It has to be Sensor"
+				},
+				"sType": {
+					"type": "string",
+					"description": "Property. Model:'https://schema.org/Text'. type description of the object"
+				},
+				"value": {
+					"type": "string",
+					"description": "Property. Model:'https://schema.org/Text'. Sensor output value"
+				}
+			},
+			"enterprise": {
+				"type": "string",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the enterprise"
+			},
+			"site": {
+				"type": "string",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the production site"
+			},
+			"area": {
+				"type": "string",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the area location on the site"
+			},
+			"processCell": {
+				"type": "string",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the processcell"
+			},
+			"unit": {
+				"type": "string",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the unit the in the processcell"
+			},
+			"equipmentModule": {
+				"type": "string",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the equipmentmodule in the unit"
+			},
+			"controlModule": {
+				"type": "string",
+				"description": "Property. Model:'https://schema.org/Text'. Name of the controllmodule in the equipmentmodule"
+			}
+		}
+	]
 }
-
