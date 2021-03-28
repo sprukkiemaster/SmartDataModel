@@ -31,30 +31,6 @@
 			"enterprise": {
 				"type": "string",
 				"description": "Property. Model:'https://schema.org/Text'. Name of the enterprise"
-			},
-			"site": {
-				"type": "string",
-				"description": "Property. Model:'https://schema.org/Text'. Name of the production site"
-			},
-			"area": {
-				"type": "string",
-				"description": "Property. Model:'https://schema.org/Text'. Name of the area location on the site"
-			},
-			"processCell": {
-				"type": "string",
-				"description": "Property. Model:'https://schema.org/Text'. Name of the processcell"
-			},
-			"unit": {
-				"type": "string",
-				"description": "Property. Model:'https://schema.org/Text'. Name of the unit the in the processcell"
-			},
-			"equipmentModule": {
-				"type": "string",
-				"description": "Property. Model:'https://schema.org/Text'. Name of the equipmentmodule in the unit"
-			},
-			"controlModule": {
-				"type": "string",
-				"description": "Property. Model:'https://schema.org/Text'. Name of the controllmodule in the equipmentmodule"
 			}
 		}
 	]
