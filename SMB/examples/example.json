@@ -7,11 +7,11 @@
     "type": "TRUE/FALSE",
     "value": "TRUE"
   },
-    "enterprise": "Demcon",
-    "site": "Enschede",
+    "enterprise": "Dopple",
+    "site": "Emmen",
     "area": "Mainfloor",
     "processcell": "Earbud",
-    "unit": "Supply",
+    "unit": "Supply Unit",
     "equipmentmodule": "product infeed",
     "controllmodule": "product present",
     "dateIssued": "2020-11-25T13:13:55.00Z"
